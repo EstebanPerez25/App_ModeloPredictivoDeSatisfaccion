@@ -1,7 +1,7 @@
 from PIL import Image
 import streamlit as st
 import pandas as pd
-import tensorflow, keras
+#import tensorflow, keras
 
 
 st.set_page_config(page_title="ML Satisfaction",layout="wide")

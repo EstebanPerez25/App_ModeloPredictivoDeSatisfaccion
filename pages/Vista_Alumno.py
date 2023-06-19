@@ -1,7 +1,7 @@
 from PIL import Image
 import streamlit as st
 import pandas as pd
-import tensorflow
+#import tensorflow
 import pickle
 
 # -- Data

@@ -2,7 +2,7 @@ from PIL import Image
 import streamlit as st
 import pandas as pd
 import tensorflow
-import pickle
+import pickle5 as pickle
 
 # -- Data
 df_coment=pd.read_csv("https://raw.githubusercontent.com/EstebanPerez25/ACD-Modelo_predictivo_de_satisfacion/main/DataBase.csv")

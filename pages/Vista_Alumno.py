@@ -9,7 +9,7 @@ df_coment=pd.read_csv("https://raw.githubusercontent.com/EstebanPerez25/ACD-Mode
 osf_valores = df_coment['osf'].unique().tolist()
 
 # -- Leer modelo
-nombre_archivo = "m_dnn.pkl"
+nombre_archivo = "https://github.com/EstebanPerez25/App_ModeloPredictivoDeSatisfaccion/blob/main/pages/m_dnn.pkl"
 archivo_entrada = open(nombre_archivo, 'rt')
 lin_model = pickle.load(archivo_entrada)
 

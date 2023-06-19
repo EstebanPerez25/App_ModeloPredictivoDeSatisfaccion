@@ -10,7 +10,7 @@ osf_valores = df_coment['osf'].unique().tolist()
 
 # -- Leer modelo
 nombre_archivo = "m_dnn.pkl"
-archivo_entrada = open(nombre_archivo, 'r')
+archivo_entrada = open(nombre_archivo, 'rt')
 lin_model = pickle.load(archivo_entrada)
 
 # -- Función modelo

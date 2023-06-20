@@ -6,7 +6,7 @@ import pickle5 as pickle
 
 #---
 import urllib.request
-url = 'https://github.com/EstebanPerez25/App_ModeloPredictivoDeSatisfaccion/blob/8eded32adafde89d3873547b8f86a37557beae50/pages/m_dnn.pkl
+url = 'https://github.com/EstebanPerez25/App_ModeloPredictivoDeSatisfaccion/blob/8eded32adafde89d3873547b8f86a37557beae50/pages/m_dnn.pkl'
 
 with urllib.request.urlopen(url) as response:
     # Cargar el objeto pickle

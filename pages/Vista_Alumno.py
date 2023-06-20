@@ -2,7 +2,7 @@ from PIL import Image
 import streamlit as st
 import pandas as pd
 import tensorflow
-import pickle5 as pickle
+import pickle
 
 #---
 import urllib.request

@@ -4,20 +4,6 @@ import pandas as pd
 import tensorflow
 import pickle
 
-#---
-"""
-#import urllib.request
-#url = 'https://github.com/EstebanPerez25/App_ModeloPredictivoDeSatisfaccion/blob/8eded32adafde89d3873547b8f86a37557beae50/pages/m_dnn.pkl'
-
-#with urllib.request.urlopen(url) as response:
-    ## Cargar el objeto pickle
-    #lin_model = pickle.load(response)
-"""
-#---
-
-# Hacer algo con el contenido del archivo
-# ...
-
 
 # -- Data
 df_coment=pd.read_csv("https://raw.githubusercontent.com/EstebanPerez25/ACD-Modelo_predictivo_de_satisfacion/main/DataBase.csv")

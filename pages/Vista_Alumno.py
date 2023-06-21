@@ -5,12 +5,14 @@ import tensorflow
 import pickle
 
 #---
+"""
 import urllib.request
 url = 'https://github.com/EstebanPerez25/App_ModeloPredictivoDeSatisfaccion/blob/8eded32adafde89d3873547b8f86a37557beae50/pages/m_dnn.pkl'
 
 with urllib.request.urlopen(url) as response:
     # Cargar el objeto pickle
     lin_model = pickle.load(response)
+"""
 #---
 
 # Hacer algo con el contenido del archivo
@@ -22,12 +24,10 @@ df_coment=pd.read_csv("https://raw.githubusercontent.com/EstebanPerez25/ACD-Mode
 osf_valores = df_coment['osf'].unique().tolist()
 
 # -- Leer modelo
-#nombre_archivo = "m_dnn.pkl"
-#archivo_entrada = open(nombre_archivo, 'rt')
-#with open(nombre_archivo, 'rb') as archivo:
-   # # Cargar el objeto desde el archivo .pkl
-    #archivo_entrada = pickle.load(archivo)
-#lin_model = pickle.load(archivo_entrada)
+# -- Leer modelo
+nombre_archivo = "m_dnn.pkl"
+archivo_entrada = open(nombre_archivo, 'rb')
+lin_model = pickle.load(archivo_entrada)
 
 # -- Función modelo
 def prediction(lstat, rm):

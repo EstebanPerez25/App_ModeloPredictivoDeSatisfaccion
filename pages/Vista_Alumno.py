@@ -6,12 +6,12 @@ import pickle
 
 #---
 """
-import urllib.request
-url = 'https://github.com/EstebanPerez25/App_ModeloPredictivoDeSatisfaccion/blob/8eded32adafde89d3873547b8f86a37557beae50/pages/m_dnn.pkl'
+#import urllib.request
+#url = 'https://github.com/EstebanPerez25/App_ModeloPredictivoDeSatisfaccion/blob/8eded32adafde89d3873547b8f86a37557beae50/pages/m_dnn.pkl'
 
-with urllib.request.urlopen(url) as response:
-    # Cargar el objeto pickle
-    lin_model = pickle.load(response)
+#with urllib.request.urlopen(url) as response:
+    ## Cargar el objeto pickle
+    #lin_model = pickle.load(response)
 """
 #---
 
@@ -23,7 +23,6 @@ with urllib.request.urlopen(url) as response:
 df_coment=pd.read_csv("https://raw.githubusercontent.com/EstebanPerez25/ACD-Modelo_predictivo_de_satisfacion/main/DataBase.csv")
 osf_valores = df_coment['osf'].unique().tolist()
 
-# -- Leer modelo
 # -- Leer modelo
 nombre_archivo = "m_dnn.pkl"
 archivo_entrada = open(nombre_archivo, 'rb')

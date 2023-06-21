@@ -9,10 +9,8 @@ import pickle
 df_coment=pd.read_csv("https://raw.githubusercontent.com/EstebanPerez25/ACD-Modelo_predictivo_de_satisfacion/main/DataBase.csv")
 osf_valores = df_coment['osf'].unique().tolist()
 
-# -- Leer modelo
-nombre_archivo = "m_dnn.pkl"
-archivo_entrada = open(nombre_archivo, 'rb')
-lin_model = pickle.load(archivo_entrada)
+# -- Leer modelo 
+lin_model = pickle.load(open('m_dnn.pkl', 'rb'))
 
 # -- Función modelo
 def prediction(lstat, rm):

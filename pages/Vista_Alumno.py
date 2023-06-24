@@ -17,7 +17,7 @@ lin_model = keras.models.load_model('model_dnn')
 def prediction(lstat, rm):
     if lstat != None and lstat != '' and rm != None and rm != '':
         try:
-            precio = lin_model.predict([[float(lstat), float(rm)]])
+            precio = lin_model.predict([[int(lstat), int(rm)]])
             return str(round(float(precio[0]), 4))
         except ValueError:
             return 'Value error in lstat or rm'

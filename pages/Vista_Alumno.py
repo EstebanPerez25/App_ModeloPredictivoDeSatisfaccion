@@ -1,7 +1,7 @@
 from PIL import Image
 import streamlit as st
 import pandas as pd
-#import tensorflow
+import keras
 import pickle
 
 
@@ -10,7 +10,8 @@ df_coment=pd.read_csv("https://raw.githubusercontent.com/EstebanPerez25/ACD-Mode
 osf_valores = df_coment['osf'].unique().tolist()
 
 # -- Leer modelo 
-lin_model = pickle.load(open('m_dnn.pkl', 'rb'))
+#lin_model = pickle.load(open('m_dnn.pkl', 'rb'))
+lin_model = keras.models.load_model('model_dnn')
 
 # -- Función modelo
 def prediction(lstat, rm):

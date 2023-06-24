@@ -14,7 +14,7 @@ osf_valores = df_coment['osf'].unique().tolist()
 lin_model = keras.models.load_model('model_dnn')
 
 # -- Función modelo
-def prediction(lstat, rm):
+def prediction(lstat=0, rm=0):
     if lstat != None and lstat != '' and rm != None and rm != '':
         try:
             precio = lin_model.predict([[int(lstat), int(rm)]])
@@ -72,4 +72,5 @@ if __name__ == "__main__":
     main()
     nombre_archivo = "m_dnn.pkl"
     archivo_entrada = open(nombre_archivo, 'rb')
-    lin_model = pickle.load(archivo_entrada)
+    #lin_model = pickle.load(archivo_entrada)
+    lin_model = keras.models.load_model('model_dnn')

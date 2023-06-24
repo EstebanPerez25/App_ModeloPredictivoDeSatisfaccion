@@ -5,7 +5,6 @@ import pandas as pd
 
 
 st.set_page_config(page_title="ML Satisfaction",layout="wide")
-st.set_option('browser.gatherUsageStats', False)
 
 # -- Importar imágenes
 img_impacto = Image.open("images/ps.jpg")

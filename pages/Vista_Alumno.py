@@ -11,7 +11,7 @@ osf_valores = df_coment['osf'].unique().tolist()
 
 # -- Leer modelo 
 #lin_model = pickle.load(open('m_dnn.pkl', 'rb'))
-lin_model = keras.models.load_model('model_dnn')
+#lin_model = keras.models.load_model('model_dnn')
 
 # -- Función modelo
 def prediction(lstat, rm):
